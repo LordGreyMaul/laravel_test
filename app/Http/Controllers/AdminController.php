@@ -2,18 +2,16 @@
 
 namespace App\Http\Controllers;
 
-class AdminController extends Controller
+use Illuminate\Http\Request;
+
+use App\Http\Requests;
+
+class admincontroller extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('guest');
-    }
-
-
-    public function home()
-    {
+    public function home() {
         return view('admin.home');
     }
-    
-};
+    public function createblog() {
+        return view ('admin.createblog');
+    }
+}

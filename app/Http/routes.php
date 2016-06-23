@@ -14,5 +14,7 @@
 Route::get('/' , 'WelcomeController@index');
 Route::get('contact' , 'WelcomeController@contact');
 
+// Admin Panel Routes
+Route::get('admin/home' , 'admincontroller@home');
+Route::get('admin/createblog' , 'admincontroller@createblog');
 
-Route::get('home' , 'AdminController@home');
